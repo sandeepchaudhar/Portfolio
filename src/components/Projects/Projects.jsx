@@ -4,7 +4,7 @@ import "./Projects.css"
 import  recomnd from "../../assets/recomnd.png"
 import  sorting from "../../assets/sorting.png"
 import  va from "../../assets/va.png"
-import   AI from "../../assets/AI.png"
+import   AI from "../../assets/ai.png"
 import   car from "../../assets/car.png"
 
 import { useGSAP } from '@gsap/react'
