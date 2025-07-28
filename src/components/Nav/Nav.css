@@ -1,0 +1,111 @@
+nav{
+    display: flex;
+    height:60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 20px;
+    background-color: rgb(17, 20, 23);
+}
+ nav ul a{
+    cursor: pointer;
+
+}
+nav ul a:hover{
+    color:rgb(106, 196, 201) ;
+    border-bottom:2px solid white ;
+}
+
+.active{
+    color:rgb(106, 196, 201) ;
+    border-bottom:2px solid white ;
+}
+ nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: wheat;
+    list-style: none;
+    font-size: 20px;
+}
+nav h1{
+    font-size: 30px;
+    background: linear-gradient(to right, rgb(65,180,205),white);
+    background-clip: text;
+    color: transparent;
+
+}
+.hamburger{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    flex-direction: column;
+    display: none;
+   
+    
+
+
+
+}
+.ham{
+width: 30px;
+height: 1px;
+background-color: aliceblue;
+  transition: all 0.6s;
+}
+
+.activemobile{
+    transform: translateX(0%);
+}
+.activeham .ham:nth-child(1){
+    transform: rotate(45deg);
+    position: relative;
+    top: 9px;
+}
+.activeham .ham:nth-child(2){
+    opacity:0 ;
+     
+}
+.activeham .ham:nth-child(3){
+    transform: rotate(-45deg);
+
+     position: relative;
+    top: -9px;
+}
+
+.mobilemenu{
+    position:absolute ;
+    top:80px;
+    width: 100%; 
+    height: 100vh;
+     background: linear-gradient(to right, rgb(65,180,205,0.476),white);
+    background-clip: text;
+    color: transparent;
+     
+    right: 0;
+    transform: translateX(100%);
+    flex-direction: column;
+    transition: all 0.6s;
+    gap: 50px;
+}
+.activemobile{
+     transform: translateX(0%);
+
+
+}
+@media (max-width: 750px) {
+    .desktopmenu{
+        display: none;
+
+    }
+    .hamburger{
+        display: flex;
+
+    }
+    
+}
